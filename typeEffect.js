@@ -10,7 +10,11 @@ var id = "type-box"
 // 定義方法
 function type(){
     var box = document.getElementById(id);
-    box.innerHTML = texts[index];
+
+    // 宣告變數 切割完的文字 = 文字陣列[編號].切割(開始位置,切幾個);
+    var slice = texts[index].slice(0.2);
+    // 盒子.插入內容 = 切割完的文字;
+    box.innerHTML = slice;
 }
 
 // 當頁面載入完成時執行方法 type
